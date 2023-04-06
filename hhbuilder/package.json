@@ -1,0 +1,14 @@
+{
+  "name": "hhbuilder",
+  "version": "1.0.0",
+  "description": "cfpb-assessment-id-229979196 - hhbuilder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Removed PII as per assessment instructions",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
