@@ -9,6 +9,8 @@
   - [Potential Future Improvements](#potential-future-improvements)
   - [Original hhbuilder documentation from README.md](#original-hhbuilder-documentation-from-readmemd)
 
+![Screenshot of Google Chrome - Household builder - 04-07-2023 at 08 55 04](https://user-images.githubusercontent.com/19983248/230639116-41e6f7ad-6e06-40d4-a8a0-6056c8442693.gif)
+
 > "... a way to capture information about a household applying for health insurance coverage. Develop a UI for building a household up from individual people."
 
 ## Dev Environment
