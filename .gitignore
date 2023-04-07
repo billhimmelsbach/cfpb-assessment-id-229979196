@@ -2,3 +2,4 @@
 node_modules
 */cypress/downloads
 .pytest_cache
+.mypy_cache
