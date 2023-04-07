@@ -72,6 +72,11 @@ Time to install the dependencies! Make sure you run this command from the root o
 pipenv sync --python 3.8.16
 ```
 
+One last pythong step! To make sure that your virtual environment is completely ready, run this install command:
+```*.sh-session
+pipenv install requests responses pytest mypy requests-mock
+```
+
 ### Install [Docker](https://www.docker.com/)
 Now all you need is Docker for the assessment's backend API.
 

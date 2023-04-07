@@ -25,8 +25,8 @@ To keep things separate and simple, I've kept the two projects split from each o
 
 To continue the theme of JavaScript, Python, and the CFPB: I've chosen to use Cypress and Pytest (Thanks for the confirmation of allowing testing libraries over email). The testing instructions are similarly separated into their respective assessments, and please run the commands from the roots of their respective directories.
 
-- [hhbuilder testing setup](./hhbuilder/README.md#dev-environment)
-- [noclist testing setup](./noclist/README.md#dev-environment)
+- [hhbuilder testing setup](./hhbuilder/README.md#testing)
+- [noclist testing setup](./noclist/README.md#testing)
 
 ## Potential Future Improvements
 

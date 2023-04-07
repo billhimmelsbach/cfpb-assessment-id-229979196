@@ -3,7 +3,7 @@
 import json
 import hashlib
 import sys
-from typing import Union, Optional, Mapping
+import typing
 
 import requests
 
@@ -19,7 +19,7 @@ def handle_exception(error: Exception) -> None:
     print(error, file=sys.stderr)
 
 
-def connect(url: str, headers: Optional[Mapping[str, Union[str, bytes]]]) -> requests.Response:
+def connect(url: str, headers: typing.Optional[typing.Mapping[str, typing.Union[str, bytes]]]) -> requests.Response:
     """
     initiates initial API call with headers, retries API connection if connection fails
     """
@@ -63,7 +63,7 @@ def get_users(checksum: str) -> str:
     get the list of users from the API
     """
     get_users_url: str = BADSEC_API_URL + '/users'
-    auth_header: dict[str, str] = {'X-Request-Checksum': checksum}
+    auth_header: typing.Dict[str, str] = {'X-Request-Checksum': checksum}
     users_response: requests.Response = connect(
         get_users_url, auth_header)
     user_list: str = users_response.text
