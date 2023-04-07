@@ -10,6 +10,11 @@
   - [Testing](#testing)
   - [Potential Future Improvements](#potential-future-improvements)
   - [noclist Documentation](#noclist-documentation)
+  
+
+![Screenshot of iTerm - bill@bill-mac~codetest-cfpbcfpb-assessment-id-229979196noclist - 04-07-2023 at 08 51 57](https://user-images.githubusercontent.com/19983248/230638711-d42ff937-4117-4751-b9ae-6984726c1af0.png)
+
+  
 
 > "The Bureau of Adversarial Dossiers and Securely Encrypted Code (BADSEC) has asked you to retrieve a list of VIP users. Fortunately, BADSEC provides an API to the agency you've been working with. Unfortunately, it's not the best API in the world..."
 
