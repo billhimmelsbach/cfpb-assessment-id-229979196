@@ -111,10 +111,9 @@ pipenv run mypy main.py
 
 ## Potential Future Improvements
 - I wish I had more time to dig into building out pytest fixtures instead of these garish variables in the main pages.
-- I went back and forth about removing the newline in the stdout and if I should encapsulate the entire stdout in an object. In the end, I believe this is the most valid JSON without any extra trappings.
+- One internal debate I had was if I should include the newline in the stdout and if I should encapsulate the entire stdout in an object. In the end, I believe this is the most valid JSON without any extra trappings.
 - I'd love to add types to the testing file as well
-- I really wanted to dockerize this, but it just slipped in my scope. Instead, I got to write a small novel of dev environment steps.
-- I learned that requests has retry functionality, but by default, it's set to one try
+- Really wanted to dockerize this, but it just slipped in my scope. Instead, I got to write a small novel of dev environment steps.
 
 ## noclist Documentation
 

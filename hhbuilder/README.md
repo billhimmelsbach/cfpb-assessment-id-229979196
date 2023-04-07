@@ -73,7 +73,7 @@ npx cypress open
 - The most controversial decision I think I made was to lean into the form validation API instead of a pure JS solution. I was pretty shocked that the instructions for the assessment made a point of following accessibility guidelines, while also saying you were not allowed to touch the index.html. This kind of validation should be on the HTML for the widest support of screenreaders.
 - It pained me not to improve the CSS, but the instructions said not to worry.
 - The index.js said "your code here", so I was reluctant to make ES modules in separate files.
-- I tried to keep the server the source of truth, and do things a little declaratively, but I think I could refactor that more.
+- I tried to keep the server the source of truth, but I think I could have done things a little more declaratively
 - If I could modify the index.html, I would have used FormData to make things more extensible.
 
 ## Original hhbuilder documentation from README.md
