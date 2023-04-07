@@ -1,18 +1,3 @@
-
-TODO: brainstorming
-
-- pains me not to use CSS, but it says not to make it pretty
-- only one file for JS?
-- it's going to be fun to do old JS
-- important for me to use HTML validation to complete for accessibility
-- allow submitting with unadded houshold members?
-- capitalize relations and states when rendered?
-- Can ages have decimals?
-- assume backend validation
-- display server errors
-- video of project with screen reader
-- tests on chrome, firefox, safari - latest stable versions
-
 # hhbuilder
 
 - [hhbuilder](#hhbuilder)
@@ -85,30 +70,11 @@ npx cypress open
 ```
 
 ## Potential Future Improvements
-// The following code is based on the restriction from the assessment challenge that the index.js
-// file cannot be changed in any way while also following industry standard accessibility practices.
-// Accessibility best practices are to use HTML's built-in form validation as much as possible in
-// order to allow the widest range of screen readers to report input restrictions (see screen reader
-// demo in the README)
-
-- keep server the source of truth
-- would be great to have a declarative framework
-- I hate that I can't mess with the index.html at all, and I'm guessing messing with it with babel to import them as modules would be bad
-- keep all code in index.js?
-- can't change index.js, bad accessibility
-  - add ids for JS
-  - required and minimums
-  - TODO: said put code HERE... which made me sad
-  - TODO: most controversial: not a pure JS solution, they said I could change dom, all the screen readers
-handle that stuff differently 
-  - whole number ages?
-  - it'd be great to add a unique ID for each of these users, but I'll leave that to the future backend
-  - assume backend validation
-  - index.js said put your code here, so I wasn't sure if I could use modules, which I might depending on the conventions where I worked
-  - store
-  -   // Would prefer to use FormData API for extensibility here if without restrictions, see README.md
-  -       <script type="module" src="./index.js"></script>
-  - code goes here
+- The most controversial decision I think I made was to lean into the form validation API instead of a pure JS solution. I was pretty shocked that the instructions for the assessment made a point of following accessibility guidelines, while also saying you were not allowed to touch the index.html. This kind of validation should be on the HTML for the widest support of screenreaders.
+- It pained me not to improve the CSS, but the instructions said not to worry.
+- The index.js said "your code here", so I was reluctant to make ES modules in separate files.
+- I tried to keep the server the source of truth, and do things a little declaratively, but I think I could refactor that more.
+- If I could modify the index.html, I would have used FormData to make things more extensible.
 
 ## Original hhbuilder documentation from README.md
 

@@ -1,7 +1,3 @@
-TODO: Final TODOS
-- run linter again
-- flaky test maybe in the random test?
-- malformed data
 # noclist
 - [noclist](#noclist)
   - [Dev Environment](#dev-environment)
@@ -114,15 +110,11 @@ pipenv run mypy main.py
 ```
 
 ## Potential Future Improvements
-- add types to testing file
-
-TODO: Please write the retry logic yourself rather than use a request library with built-in retry functionality. Requests library ok, just not retry?
-TODO: coming from Typescript land, I decided to add the optional typing
-TODO: no newline after stdout
-TODO: should this thing be wrapped in an object?
-
-- dockerize?
-- python version?
+- I wish I had more time to dig into building out pytest fixtures instead of these garish variables in the main pages.
+- I went back and forth about removing the newline in the stdout and if I should encapsulate the entire stdout in an object. In the end, I believe this is the most valid JSON without any extra trappings.
+- I'd love to add types to the testing file as well
+- I really wanted to dockerize this, but it just slipped in my scope. Instead, I got to write a small novel of dev environment steps.
+- I learned that requests has retry functionality, but by default, it's set to one try
 
 ## noclist Documentation
 
