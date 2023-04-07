@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
-*/cypress/downloads
+*/cypress/downloads/*
+*/cypress/videos/*
 .pytest_cache
 .mypy_cache

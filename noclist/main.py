@@ -14,10 +14,9 @@ MAX_NUMBER_OF_CONNECTION_ATTEMPTS: int = 3
 
 def handle_exception(error: Exception) -> None:
     """
-    abstracted error handling function, would use a log service like Sentry in production
-
+    abstracted error handling function (would include logging in a production environment)
     """
-    print(error)
+    print(error, file=sys.stderr)
 
 
 def connect(url: str, headers: Optional[Mapping[str, Union[str, bytes]]]) -> requests.Response:
@@ -33,18 +32,10 @@ def connect(url: str, headers: Optional[Mapping[str, Union[str, bytes]]]) -> req
             return response
         except requests.exceptions.RequestException as error:
             handle_exception(error)
-
-        # I don't believe the error exceptions below are required since all exceptions are caught by
-        # the above and the behavior of exiting is the same for all errors
-        # except requests.exceptions.HTTPError as error:
-        #     handle_exception(error)
-        # except requests.exceptions.ConnectionError as error:
-        #     handle_exception(error)
-        # except requests.exceptions.Timeout as error:
-        #     handle_exception(error)
     # throw retry exception after max number of attempts (requests lib defaults to 1 try per call)
-    raise requests.exceptions.RetryError(
-        'Max number of connection attempts reached')
+    print(requests.exceptions.RetryError(
+        'Max number of connection attempts reached'))
+    sys.exit(1)
 
 
 def get_auth_token() -> str:

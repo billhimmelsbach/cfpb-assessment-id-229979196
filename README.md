@@ -8,11 +8,13 @@
 
 Two projects for a CFPB skills assessment due April 7, 2023 at 12pm Eastern.
 
-1. hhbuilder - capture and display a household's individual members using a simple web form
+1. hhbuilder (JS/HTML) - capture and display a household's individual members using a simple web form
 
-2. noclist - create a CLI program that can pull a VIP user list from an unreliable API and print the results to stdout
+2. noclist (Python) - create a CLI program that can pull a VIP user list from an unreliable API and print the results to stdout
 
-TODO: RESEARCH: want to use python and JS since that's their stack?
+To be a good fit for the CFPB tech stack, I've chosen to use JavaScript and Python.
+
+TODO: want to use python and JS since that's your stack
 
 TODO: gifs of projects
 
@@ -23,6 +25,16 @@ TODO: individual project descriptions with links to specific documentation per p
 ## Testing
 
 TODO: list tooling used and test commands
+
+TODO: most controversial: not a pure JS solution, they said I could change dom, all the screen readers
+handle that stuff differently 
+
+TODO: es6, email comments
+
+TODO: more time? would consider putting them into objects and classes
+
+
+TODO: said put code HERE... which made me sad
 
 ## Future Improvements
 

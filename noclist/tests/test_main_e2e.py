@@ -2,8 +2,8 @@
 
 import subprocess
 import json
+import requests_mock
 
-# TODO: refactor to fixture
 expected_users: list = ["18207056982152612516", "7692335473348482352", "6944230214351225668",
                         "3628386513825310392", "8189326092454270383", "12257150257418962584",
                         "15245671842903013860", "6123808318520183820", "2369758755179393951",
@@ -29,7 +29,8 @@ expected_users: list = ["18207056982152612516", "7692335473348482352", "69442302
 expected_stdout = json.dumps(expected_users)
 
 
-def test_script_output():
+def test_main_script():
+    requests_mock.real_http = True
     '''integration test to ensure the script returns expected stdout'''
     stdout = subprocess.run(['python', 'main.py'],
                             check=True, capture_output=True, text=True).stdout

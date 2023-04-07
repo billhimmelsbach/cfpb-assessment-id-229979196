@@ -1,25 +1,26 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('clickAddButton', () => {
+  cy.get('.add').click();
+});
+
+Cypress.Commands.add('inputAge', (age) => {
+  if (age) {
+    cy.get('#age').type(age);
+  }
+});
+
+Cypress.Commands.add('inputValidRelationship', (rel) => {
+  if (rel) {
+    cy.get('#rel').select(rel);
+    cy.get('#rel').should('have.value', rel);
+  }
+});
+
+Cypress.Commands.add('inputValidSmoker', (smoker) => {
+  if (smoker === 'on') {
+    cy.get('#smoker').check();
+    cy.get('#smoker').should('be.checked');
+  } else {
+    const test = cy.get('#smoker');
+    cy.get('#smoker').should('not.be.checked');
+  }
+});

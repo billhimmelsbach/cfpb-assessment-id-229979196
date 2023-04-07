@@ -1,0 +1,32 @@
+[
+  {
+    "age": "31",
+    "rel": "self",
+    "smoker": "off"
+  },
+  {
+    "age": "30",
+    "rel": "spouse",
+    "smoker": "off"
+  },
+  {
+    "age": "5",
+    "rel": "child",
+    "smoker": "off"
+  },
+  {
+    "age": "61",
+    "rel": "parent",
+    "smoker": "on"
+  },
+  {
+    "age": "87",
+    "rel": "grandparent",
+    "smoker": "off"
+  },
+  {
+    "age": "100",
+    "rel": "other",
+    "smoker": "on"
+  }
+]
